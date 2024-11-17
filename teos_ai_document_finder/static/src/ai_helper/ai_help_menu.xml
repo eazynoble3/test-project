@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<t t-name="teos_ai_helper.AIHelperMenu">
+    <button type="button" t-on-click="OpenAIpopup" style="border-radius: 15px;cursor: help;background-color:purple; color:white">
+        <span>Search </span>
+        <i class="fa fa-file-pdf-o"></i>
+    </button>
+</t>
+</templates>

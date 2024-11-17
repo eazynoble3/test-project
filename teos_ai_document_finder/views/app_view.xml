@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <!-- Define the form view for asking questions -->
+        <record id="view_ai_app_form" model="ir.ui.view">
+            <field name="name">ai.app.form</field>
+            <field name="model">ai.app</field>
+            <field name="arch" type="xml">
+                <form string="AI App">
+                    <header>
+                        <button name="action_renew_token" string="Renew Token" type="object" class="btn-secondary"/>
+                    </header>
+                    <sheet>
+                        <div style="text-align:center;margin-bottom:20px">
+                            <h2>Need Info from your Uploaded files? Ask Below!!</h2>
+                        </div>
+                        <group>
+                           <group>
+                                <field name="question" placeholder="Ask your question here..."/>
+                                <field name="response" readonly="1"/>
+                           </group>
+                            <button name="action_submit_question" type="object" string="Submit" class="btn-primary"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+         <!-- Define the tree view for the AI App -->
+        <record id="view_ai_app_tree" model="ir.ui.view">
+            <field name="name">ai.app.tree</field>
+            <field name="model">ai.app</field>
+            <field name="arch" type="xml">
+                <tree string="AI App">
+                    <field name="question"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

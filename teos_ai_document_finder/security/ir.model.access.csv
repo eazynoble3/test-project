@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_registration_result_wizard,access.registration.result.wizard,model_registration_result_wizard,,1,1,1,1
+access_ai_app,access.ai.app,model_ai_app,,1,1,1,1
+access_llm_config,access.llm.config,model_llm_config,,1,1,1,1

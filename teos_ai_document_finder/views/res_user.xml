@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Inherit the res.users form view to add Flask fields -->
+        <record id="view_users_form_inherited_ai" model="ir.ui.view">
+            <field name="name">res.users.form.inherited.ai</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr = "//header" position = "inside">
+                    <button name="action_login_user" string="Test AI Login" type="object" class="oe_highlight"/>
+                    <button name="action_register_user" string=" AI Register User" type="object"/>
+                </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page string="AI" name="ai">
+                        <group name="integration_ai" string="AI Integration">
+                            <group>
+                                <field name="ai_username"/>
+                                <field name="ai_password"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
