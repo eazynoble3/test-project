@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="hr_view_employee_form_inherit" model="ir.ui.view">
+            <field name="name">	hr.view.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='public']/div/div/group[@name='departure']" position="replace">
+                    <group name="departure" string="Departure">
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="stage_duration"/>
+                        <field name="paul_feild"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
