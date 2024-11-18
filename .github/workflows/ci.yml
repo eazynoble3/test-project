@@ -29,7 +29,6 @@ jobs:
         key: ${{ secrets.SERVER_PRIVATE_KEY }}
         port: 22
         script: |
-          set +x
           echo "Starting deployment..."
           bash /etc/build/build.sh
           echo "Deployment complete!"
