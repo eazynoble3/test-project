@@ -1,6 +1,6 @@
 {
     'name': "test-wesolved",
-    'version': '17.0.0.1.1',
+    'version': '17.0.0.1.3',
     'author': 'Ezekiel Victor',
     'category': 'Custom',
     'licence': 'AGPL-3',
