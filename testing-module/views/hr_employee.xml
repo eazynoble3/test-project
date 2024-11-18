@@ -11,7 +11,6 @@
                         <field name="end_date"/>
                         <field name="stage_duration"/>
                         <field name="paul_feild"/>
-                        <field name="victor_feild"/>
                     </group>
                 </xpath>
             </field>
