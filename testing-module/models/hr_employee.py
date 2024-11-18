@@ -15,6 +15,7 @@ class HrEmployee(models.Model):
     end_date = fields.Date(string='Departure date')
     stage_duration = fields.Char(string="Years of Service", store=True)
     paul_feild = fields.Datetime(string="Paul")
+    victor_feild = fields.Datetime(string="Paul"
 
     @api.onchange('start_date', 'end_date')
     def onchange_start_date(self):
