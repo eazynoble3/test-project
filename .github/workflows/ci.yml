@@ -1,7 +1,11 @@
 name: Pylint
 
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
+      - stage
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,6 +33,20 @@ jobs:
         key: ${{ secrets.SERVER_PRIVATE_KEY }}
         port: 22
         script: |
-          echo "Starting deployment..."
-          bash /etc/build/build.sh
+          echo "Starting deployment for branch: ${{ github.ref_name }}"
+          
+          if [[ "${{ github.ref_name }}" == "stage" ]]; then
+            echo "Running Stage deployment..."
+            bash /etc/wesolved/build/scripts/stage-deploy.sh
+            
+          elif [[ "${{ github.ref_name }}" == "main" ]]; then
+            echo "Running Production deployment..."
+            bash /etc/wesolved/build/scripts/main-deploy.sh
+            
+          else
+            echo "Invalid branch. Exiting..."
+            exit 1
+          fi
+          
           echo "Deployment complete!"
+
