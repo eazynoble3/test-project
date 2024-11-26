@@ -10,6 +10,7 @@
                         <field name="start_date"/>
                         <field name="end_date"/>
                         <field name="stage_duration"/>
+                        <field name="paul_feild"/>
                     </group>
                 </xpath>
             </field>
