@@ -9,7 +9,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240305
-    created: "2024-12-12T14:25:52.393662894+01:00"
+    created: "2024-12-12T14:52:34.442805815+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -23,7 +23,7 @@ entries:
     description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
       that can connect a wide variety of business operations such as sales, supply
       chain, finance, and project management.
-    digest: 36ab0c33a1601e433bc4110943c03a1bc52e481878300b589ee653dd5afb6efe
+    digest: 44f86996bdb77504f5fc0ba1bd53ddd96c5d5395cf61bc5f5232f378baa598e1
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
     keywords:
@@ -39,6 +39,6 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - git@github.com:eazynoble3/test-project.git/odoo-26.0.0.tgz
+    - https://eazynoble3.github.io/test-project/helm-charts/odoo-26.0.0.tgz
     version: 26.0.0
-generated: "2024-12-12T14:25:51.86585481+01:00"
+generated: "2024-12-12T14:52:33.888491811+01:00"
